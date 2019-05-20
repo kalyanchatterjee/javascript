@@ -1,0 +1,47 @@
+https://www.youtube.com/watch?v=Bv_5Zv5c-Ts
+
+Lexical Environment:
+Where something sits physically in the code you write
+
+Execution Context:
+A wrapper to help manage the code that is running.
+
+Object:
+A collection of name/value pairs (when talking about JavaScript) - THAT'S IT!!!
+
+Global Object:
+example: window. It is referred by "this" (at the global level, i.e. not inside a function)
+In JS, a global object is something that is not inside a function
+
+Global => Not Inside a function
+
+Hoisting:
+Setup Memory Space for Variables and Functions. Know the difference between how the memory space is setup for functions and variables. The funtion in its entireity is put in memory, a variable isn't.
+
+undefined => A special value which means a variable hasn't been set
+Not the same as "not defined"
+
+The Execution Context:
+=====================
+Single threaded, synchronous execution
+
+Invocation means just calling the function.
+
+1) Global execution context is created anytime JavaScript is run
+2) Attaches functions to it
+3) Anytime you execute a function in JavaScript, a new execution context is created. This execution context is then placed on the execution stack.
+4) When another function is invoked, it will create another execution context and add to the execution stack
+5) REMEMBER - anytime a function is invoked (even it calls itself), a new execution context is created and added to the execution stack
+
+Variable Environment (1:10:00): 
+1. Every execution context has its own variable environment which are distinct
+
+The Scope Chain
+-=============-
+
+
+
+
+
+
+
