@@ -38,6 +38,15 @@ Variable Environment (1:10:00):
 
 The Scope Chain
 -=============-
+See scopechain.js 
+
+Asynchronous Callbacks
+-====================-
+
+Asynchronous = more than one at a time
+Natively JS doesn't run asynchronously 
+
+Diff between JavaScript and JavaScript Engine.
 
 
 
