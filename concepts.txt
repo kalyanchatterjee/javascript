@@ -40,6 +40,11 @@ The Scope Chain
 -=============-
 See scopechain.js 
 
+let
+---
+- The variable is availbale only inside the block
+- Block scoping
+
 Asynchronous Callbacks
 -====================-
 
@@ -47,8 +52,35 @@ Asynchronous = more than one at a time
 Natively JS doesn't run asynchronously 
 
 Diff between JavaScript and JavaScript Engine.
+The JavaScript engine doesn't exist by itself and has other engines like the Rendering Engine, the HTTP Request Engine. 
+The JavaScript engine has hooks which connect to other engines
 
 
+Event Queue
+-=========-
+A click event for example. The Event Queue gets looked up by the JavaScript engine, when the execution stack is empty. So if it sees a click event, it creates the execution context for the clickHandler() function. Key thing to remember is that JavaScript engine won't look at the Event Queue, until the execution stack is empty.
+
+
+
+Primitive Types - 6 in Total
+-==========================-
+A single value, ie not an object
+
+undefined (lack of existence) - shouldn't set a variable to this value
+null - you can set a variable to this
+boolean - true or false
+number - Only one type - a floating point number
+string - a sequence of characters, both ' and " can be used
+symbol (ES6)
+
+
+In-fix notation
+===============
+var a = 3 + 4;
+
+Pre-fix notation
+================
+var a = +(3, 4); // '+' declared as a function
 
 
 
