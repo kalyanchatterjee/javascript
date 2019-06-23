@@ -82,6 +82,55 @@ Pre-fix notation
 ================
 var a = +(3, 4); // '+' declared as a function
 
+Coresion
+=-=-=-=-
+Obvious stuff. No notes.
+
+Comparison Operators (C O N C E P T)
+-==================-
+console.log(1<2<3):
+true
+
+console.log(3<2<1)
+true (?????)
+
+Associativity rules apply (left to right):
+3 < 2 = false
+
+false < 1
+- Here false is coerced to 0. 
+Number(false) 
+0
+
+0 < 1 
+true
+
+Coersion can cause some unexpected results from a human perspective. 
+
+It is not always obvious the coersion is going to be. For example, undefined and null won't coerce to the same Number.
+Number(undefined)
+NaN
+Number(null)
+0
+
+How to avoid coersion errors? 
+============================
+== causes strange errors, that's, double equals
+Use strict equality
+1 == true
+true
+1 === true
+false
+Use === by default!!!!!
+
+
+
+
+
+
+
+
+
 
 
 
