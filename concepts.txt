@@ -31,7 +31,7 @@ Invocation means just calling the function.
 2) Attaches functions to it
 3) Anytime you execute a function in JavaScript, a new execution context is created. This execution context is then placed on the execution stack.
 4) When another function is invoked, it will create another execution context and add to the execution stack
-5) REMEMBER - anytime a function is invoked (even it calls itself), a new execution context is created and added to the execution stack
+5) REMEMBER - anytime a function is invoked (even if it calls itself), a new execution context is created and added to the execution stack
 
 Variable Environment (1:10:00): 
 1. Every execution context has its own variable environment which are distinct
@@ -64,6 +64,7 @@ A click event for example. The Event Queue gets looked up by the JavaScript engi
 
 Primitive Types - 6 in Total
 -==========================-
+Dynamic Typing - You don't need to declare the variable type, the type of the variable is determined during runtime. 
 A single value, ie not an object
 
 undefined (lack of existence) - shouldn't set a variable to this value
@@ -72,6 +73,7 @@ boolean - true or false
 number - Only one type - a floating point number
 string - a sequence of characters, both ' and " can be used
 symbol (ES6)
+
 
 
 In-fix notation
